@@ -11,7 +11,7 @@ require (
 	github.com/filecoin-project/go-ds-versioning v0.1.2
 	github.com/filecoin-project/go-fil-commcid v0.1.0
 	github.com/filecoin-project/go-fil-commp-hashhash v0.1.0
-	github.com/brossetti1/go-fil-markets v1.26.1
+	github.com/brossetti1/go-fil-markets v0.0.0-20230307184156-379c9b2d4215
 	github.com/filecoin-project/go-padreader v0.0.1
 	github.com/filecoin-project/go-state-types v0.9.9
 	github.com/filecoin-project/go-statemachine v1.0.3
@@ -167,4 +167,4 @@ require (
 
 replace github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
 
-replace github.com/brossetti1/go-fil-markets => github.com/brossetti1/go-fil-markets v0.0.0-20230307175009-cd8d0af90a08
+// replace github.com/brossetti1/go-fil-markets => github.com/brossetti1/go-fil-markets v0.0.0-20230307175009-cd8d0af90a08
