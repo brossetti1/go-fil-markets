@@ -4,8 +4,8 @@ import (
 	"github.com/ipfs/go-datastore"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
 
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
 )
 
 type TestStorageBlockstoreAccessor struct {

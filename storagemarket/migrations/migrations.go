@@ -17,8 +17,8 @@ import (
 	"github.com/filecoin-project/go-state-types/crypto"
 	marketOld "github.com/filecoin-project/specs-actors/actors/builtin/market"
 
-	"github.com/filecoin-project/go-fil-markets/filestore"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/filestore"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
 )
 
 //go:generate cbor-gen-for ClientDeal0 MinerDeal0 Balance0 SignedStorageAsk0 StorageAsk0 DataRef0 ProviderDealState0 AskRequest0 AskResponse0 Proposal0 Response0 SignedResponse0 DealStatusRequest0 DealStatusResponse0

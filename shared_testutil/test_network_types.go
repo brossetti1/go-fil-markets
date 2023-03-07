@@ -11,10 +11,10 @@ import (
 
 	cborutil "github.com/filecoin-project/go-cbor-util"
 
-	"github.com/filecoin-project/go-fil-markets/discovery"
-	rm "github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	rmnet "github.com/filecoin-project/go-fil-markets/retrievalmarket/network"
-	smnet "github.com/filecoin-project/go-fil-markets/storagemarket/network"
+	"github.com/brossetti1/go-fil-markets/discovery"
+	rm "github.com/brossetti1/go-fil-markets/retrievalmarket"
+	rmnet "github.com/brossetti1/go-fil-markets/retrievalmarket/network"
+	smnet "github.com/brossetti1/go-fil-markets/storagemarket/network"
 )
 
 // QueryReader is a function to mock reading queries.

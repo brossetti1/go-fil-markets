@@ -9,8 +9,8 @@ import (
 
 	cborutil "github.com/filecoin-project/go-cbor-util"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/migrations"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket/migrations"
 )
 
 type legacyAskStream struct {

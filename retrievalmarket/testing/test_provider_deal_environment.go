@@ -8,9 +8,9 @@ import (
 
 	datatransfer "github.com/filecoin-project/go-data-transfer/v2"
 
-	rm "github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	retrievalimpl "github.com/filecoin-project/go-fil-markets/retrievalmarket/impl"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket/impl/providerstates"
+	rm "github.com/brossetti1/go-fil-markets/retrievalmarket"
+	retrievalimpl "github.com/brossetti1/go-fil-markets/retrievalmarket/impl"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/providerstates"
 )
 
 // TestProviderDealEnvironment is a test implementation of ProviderDealEnvironment used

@@ -21,8 +21,8 @@ import (
 	versioning "github.com/filecoin-project/go-ds-versioning/pkg"
 	"github.com/filecoin-project/go-state-types/builtin/v8/paych"
 
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
 )
 
 var blockGenerator = blocksutil.NewBlockGenerator()

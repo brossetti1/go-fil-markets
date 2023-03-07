@@ -22,7 +22,7 @@ import (
 	"github.com/filecoin-project/go-state-types/builtin/v8/paych"
 	"github.com/filecoin-project/go-state-types/crypto"
 
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
 )
 
 func TestIpldCompat_DealResponse(t *testing.T) {

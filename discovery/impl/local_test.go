@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	discoveryimpl "github.com/filecoin-project/go-fil-markets/discovery/impl"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/shared_testutil"
+	discoveryimpl "github.com/brossetti1/go-fil-markets/discovery/impl"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/shared_testutil"
 )
 
 func TestLocal_AddPeer(t *testing.T) {

@@ -23,16 +23,16 @@ import (
 	"github.com/filecoin-project/go-state-types/exitcode"
 	"github.com/filecoin-project/go-statemachine/fsm"
 
-	discoveryimpl "github.com/filecoin-project/go-fil-markets/discovery/impl"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/shared"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientstates"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientutils"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/dtutils"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/requestvalidation"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/migrations"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/network"
+	discoveryimpl "github.com/brossetti1/go-fil-markets/discovery/impl"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/shared"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/clientstates"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/clientutils"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/dtutils"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/requestvalidation"
+	"github.com/brossetti1/go-fil-markets/storagemarket/migrations"
+	"github.com/brossetti1/go-fil-markets/storagemarket/network"
 )
 
 var log = logging.Logger("storagemarket_impl")
@@ -332,7 +332,7 @@ func (c *Client) GetProviderDealState(ctx context.Context, proposalCid cid.Cid) 
 // `SubscribeToEvents` on the Client. The Client also provides access to the node and network and other functionality through
 // its implementation of the Client FSM's ClientDealEnvironment.
 //
-// Documentation of the client state machine can be found at https://godoc.org/github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientstates
+// Documentation of the client state machine can be found at https://godoc.org/github.com/brossetti1/go-fil-markets/storagemarket/impl/clientstates
 func (c *Client) ProposeStorageDeal(ctx context.Context, params storagemarket.ProposeStorageDealParams) (*storagemarket.ProposeStorageDealResult, error) {
 	err := c.addMultiaddrs(ctx, params.Info.Address)
 	if err != nil {

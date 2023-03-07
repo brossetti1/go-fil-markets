@@ -10,7 +10,7 @@ import (
 	"github.com/filecoin-project/go-state-types/abi"
 	paychtypes "github.com/filecoin-project/go-state-types/builtin/v8/paych"
 
-	"github.com/filecoin-project/go-fil-markets/shared"
+	"github.com/brossetti1/go-fil-markets/shared"
 )
 
 // RetrievalClientNode are the node dependencies for a RetrievalClient

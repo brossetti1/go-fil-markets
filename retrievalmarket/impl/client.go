@@ -21,13 +21,13 @@ import (
 	"github.com/filecoin-project/go-state-types/big"
 	"github.com/filecoin-project/go-statemachine/fsm"
 
-	"github.com/filecoin-project/go-fil-markets/discovery"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket/impl/clientstates"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket/impl/dtutils"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket/migrations"
-	rmnet "github.com/filecoin-project/go-fil-markets/retrievalmarket/network"
-	"github.com/filecoin-project/go-fil-markets/shared"
+	"github.com/brossetti1/go-fil-markets/discovery"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/clientstates"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/dtutils"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/migrations"
+	rmnet "github.com/brossetti1/go-fil-markets/retrievalmarket/network"
+	"github.com/brossetti1/go-fil-markets/shared"
 )
 
 var log = logging.Logger("retrieval")
@@ -221,7 +221,7 @@ func (c *Client) Query(ctx context.Context, p retrievalmarket.RetrievalPeer, pay
 // Use NextID when it's necessary to reserve an ID ahead of time, e.g. to
 // associate it with a given blockstore in the BlockstoreAccessor.
 //
-// Documentation of the client state machine can be found at https://godoc.org/github.com/filecoin-project/go-fil-markets/retrievalmarket/impl/clientstates
+// Documentation of the client state machine can be found at https://godoc.org/github.com/brossetti1/go-fil-markets/retrievalmarket/impl/clientstates
 func (c *Client) Retrieve(
 	ctx context.Context,
 	id retrievalmarket.DealID,

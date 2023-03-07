@@ -21,11 +21,11 @@ import (
 	"github.com/filecoin-project/go-statemachine/fsm"
 	fsmtest "github.com/filecoin-project/go-statemachine/fsm/testutil"
 
-	tut "github.com/filecoin-project/go-fil-markets/shared_testutil"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/clientstates"
-	smnet "github.com/filecoin-project/go-fil-markets/storagemarket/network"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/testnodes"
+	tut "github.com/brossetti1/go-fil-marketss/shared_testutil"
+	"github.com/brossetti1/go-fil-marketss/storagemarket"
+	"github.com/brossetti1/go-fil-marketss/storagemarket/impl/clientstates"
+	smnet "github.com/brossetti1/go-fil-marketss/storagemarket/network"
+	"github.com/brossetti1/go-fil-marketss/storagemarket/testnodes"
 )
 
 var clientDealProposal = tut.MakeTestClientDealProposal()

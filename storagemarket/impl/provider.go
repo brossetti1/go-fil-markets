@@ -32,18 +32,18 @@ import (
 	"github.com/filecoin-project/go-state-types/exitcode"
 	"github.com/filecoin-project/go-statemachine/fsm"
 
-	"github.com/filecoin-project/go-fil-markets/filestore"
-	"github.com/filecoin-project/go-fil-markets/piecestore"
-	"github.com/filecoin-project/go-fil-markets/shared"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/connmanager"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/dtutils"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/providerstates"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/providerutils"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/requestvalidation"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/migrations"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/network"
-	"github.com/filecoin-project/go-fil-markets/stores"
+	"github.com/brossetti1/go-fil-markets/filestore"
+	"github.com/brossetti1/go-fil-markets/piecestore"
+	"github.com/brossetti1/go-fil-markets/shared"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/connmanager"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/dtutils"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/providerstates"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/providerutils"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/requestvalidation"
+	"github.com/brossetti1/go-fil-markets/storagemarket/migrations"
+	"github.com/brossetti1/go-fil-markets/storagemarket/network"
+	"github.com/brossetti1/go-fil-markets/stores"
 )
 
 var _ storagemarket.StorageProvider = &Provider{}
@@ -262,7 +262,7 @@ When a provider receives a DealProposal of the deal protocol, it takes the follo
 From then on, the statemachine controls the deal flow in the client. Other components may listen for events in this flow by calling
 `SubscribeToEvents` on the Provider. The Provider handles loading the next block to send to the client.
 
-Documentation of the client state machine can be found at https://godoc.org/github.com/filecoin-project/go-fil-markets/storagemarket/impl/providerstates
+Documentation of the client state machine can be found at https://godoc.org/github.com/brossetti1/go-fil-markets/storagemarket/impl/providerstates
 */
 func (p *Provider) HandleDealStream(s network.StorageDealStream) {
 	log.Info("Handling storage deal proposal!")

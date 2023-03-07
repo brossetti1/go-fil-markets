@@ -8,7 +8,7 @@ https://filecoin-project.github.io/specs/#systems__filecoin_markets__storage_mar
 The following architectural components provide a brief overview of the design of
 the storagemarket module:
 
-Public Interfaces And Node Dependencies
+# Public Interfaces And Node Dependencies
 
 A core goal of this module is to isolate the negotiation of deals from the actual chain operations
 performed by the node to put the deal on chain. The module primarily orchestrates the storage deal
@@ -24,7 +24,7 @@ The top level interfaces this package implements are StorageClient & StorageProv
 node is expected to implement are StorageClientNode & StorageProviderNode. Further documentation of exactly what those
 dependencies should do can be found in the readme.
 
-Finite State Machines and Resumability
+# Finite State Machines and Resumability
 
 Making deals in Filecoin is a highly asynchronous process. For a large piece of data, it's possible that the entire
 process of proposing a deal, transferring data, publishing the deal, putting the data in a sector and sealing it
@@ -35,11 +35,11 @@ and we can ideally survive our Filecoin processes shutting down and restarting.
 
 The following diagrams visualize the statemachine flows for the client and the provider:
 
-Client FSM - https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/storageclient.mmd.svg
+Client FSM - https://raw.githubusercontent.com/brossetti1/go-fil-markets/master/docs/storageclient.mmd.svg
 
-Provider FSM - https://raw.githubusercontent.com/filecoin-project/go-fil-markets/master/docs/storageprovider.mmd.svg
+Provider FSM - https://raw.githubusercontent.com/brossetti1/go-fil-markets/master/docs/storageprovider.mmd.svg
 
-Identifying Providers For A Deal
+# Identifying Providers For A Deal
 
 The StorageClient provides two functions to locate a provider with whom to make a deal:
 
@@ -49,7 +49,7 @@ querying the chain state for active storage miners.
 `QueryAsk` queries a single provider for more specific details about the kinds of deals they accept, as
 expressed through a `StorageAsk`.
 
-Deal Flow
+# Deal Flow
 
 The primary mechanism for initiating storage deals is the `ProposeStorageDeal` method on the StorageClient.
 
@@ -75,20 +75,20 @@ they wait to see and record when the deal becomes active and later expired or sl
 When a deal becomes active on chain, the provider records the location of where it's stored in a sector in the PieceStore,
 so that it's available for retrieval.
 
-Major Dependencies
+# Major Dependencies
 
 Other libraries in go-fil-markets:
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/filestore - used to store pieces and other
+https://github.com/brossetti1/go-fil-markets/tree/master/filestore - used to store pieces and other
 temporary data before it's transferred to either a sector or the PieceStore.
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/pieceio - used to convert back and forth between raw
+https://github.com/brossetti1/go-fil-markets/tree/master/pieceio - used to convert back and forth between raw
 payload data and pieces that fit in sector. Also provides utilities for generating CommP.
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/piecestore - used to write information about where data
+https://github.com/brossetti1/go-fil-markets/tree/master/piecestore - used to write information about where data
 lives in sectors so that it can later be retrieved.
 
-https://github.com/filecoin-project/go-fil-markets/tree/master/shared - types and utility functions shared with
+https://github.com/brossetti1/go-fil-markets/tree/master/shared - types and utility functions shared with
 retrievalmarket package.
 
 Other Filecoin Repos:
@@ -115,10 +115,9 @@ https://github.com/libp2p/go-libp2p) the network over which retrieval deal data 
 
 https://github.com/hannahhoward/go-pubsub - for pub/sub notifications external to the statemachine
 
-Root Package
+# Root Package
 
 This top level package defines top level enumerations and interfaces. The primary implementation
 lives in the `impl` directory
-
 */
 package storagemarket

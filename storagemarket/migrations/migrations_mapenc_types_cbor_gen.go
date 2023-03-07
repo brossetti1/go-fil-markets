@@ -9,8 +9,8 @@ import (
 	"sort"
 
 	datatransfer "github.com/filecoin-project/go-data-transfer/v2"
-	filestore "github.com/filecoin-project/go-fil-markets/filestore"
-	storagemarket "github.com/filecoin-project/go-fil-markets/storagemarket"
+	filestore "github.com/brossetti1/go-fil-markets/filestore"
+	storagemarket "github.com/brossetti1/go-fil-markets/storagemarket"
 	abi "github.com/filecoin-project/go-state-types/abi"
 	market "github.com/filecoin-project/specs-actors/actors/builtin/market"
 	cid "github.com/ipfs/go-cid"

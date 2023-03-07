@@ -13,7 +13,7 @@ import (
 	"github.com/filecoin-project/go-statemachine"
 	"github.com/filecoin-project/go-statemachine/fsm"
 
-	rm "github.com/filecoin-project/go-fil-markets/retrievalmarket"
+	rm "github.com/brossetti1/go-fil-markets/retrievalmarket"
 )
 
 var log = logging.Logger("retrieval-fsm")

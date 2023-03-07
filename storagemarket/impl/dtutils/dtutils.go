@@ -14,8 +14,8 @@ import (
 	dtgs "github.com/filecoin-project/go-data-transfer/v2/transport/graphsync"
 	"github.com/filecoin-project/go-statemachine/fsm"
 
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket/impl/requestvalidation"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket/impl/requestvalidation"
 )
 
 var log = logging.Logger("storagemarket_impl")

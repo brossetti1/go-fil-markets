@@ -14,10 +14,10 @@ import (
 
 	"github.com/filecoin-project/dagstore"
 
-	"github.com/filecoin-project/go-fil-markets/piecestore"
-	"github.com/filecoin-project/go-fil-markets/retrievalmarket"
-	"github.com/filecoin-project/go-fil-markets/storagemarket"
-	"github.com/filecoin-project/go-fil-markets/stores"
+	"github.com/brossetti1/go-fil-markets/piecestore"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/storagemarket"
+	"github.com/brossetti1/go-fil-markets/stores"
 )
 
 type registration struct {

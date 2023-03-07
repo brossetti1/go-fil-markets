@@ -8,8 +8,8 @@ import (
 	cidlink "github.com/ipld/go-ipld-prime/linking/cid"
 	"github.com/stretchr/testify/require"
 
-	tut "github.com/filecoin-project/go-fil-markets/shared_testutil"
-	"github.com/filecoin-project/go-fil-markets/stores"
+	tut "github.com/brossetti1/go-fil-markets/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/stores"
 )
 
 func TestReadWriteStoreTracker(t *testing.T) {
