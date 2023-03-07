@@ -13,10 +13,10 @@ import (
 	datatransfer "github.com/filecoin-project/go-data-transfer/v2"
 	"github.com/filecoin-project/go-statemachine/fsm"
 
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	rm "github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/dtutils"
-	"github.com/brossetti1/go-fil-marketss/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	rm "github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/dtutils"
+	"github.com/brossetti1/go-fil-markets/shared_testutil"
 )
 
 func TestProviderDataTransferSubscriber(t *testing.T) {

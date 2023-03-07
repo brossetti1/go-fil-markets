@@ -19,14 +19,14 @@ import (
 	"github.com/filecoin-project/go-statemachine/fsm"
 	fsmtest "github.com/filecoin-project/go-statemachine/fsm/testutil"
 
-	"github.com/brossetti1/go-fil-marketss/piecestore"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	rm "github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/providerstates"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/testnodes"
-	rmtesting "github.com/brossetti1/go-fil-marketss/retrievalmarket/testing"
-	"github.com/brossetti1/go-fil-marketss/shared"
-	testnet "github.com/brossetti1/go-fil-marketss/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/piecestore"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	rm "github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/providerstates"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/testnodes"
+	rmtesting "github.com/brossetti1/go-fil-markets/retrievalmarket/testing"
+	"github.com/brossetti1/go-fil-markets/shared"
+	testnet "github.com/brossetti1/go-fil-markets/shared_testutil"
 )
 
 func TestUnsealData(t *testing.T) {

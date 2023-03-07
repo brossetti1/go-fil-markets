@@ -23,14 +23,14 @@ import (
 	"github.com/filecoin-project/go-state-types/abi"
 	"github.com/filecoin-project/go-state-types/big"
 
-	"github.com/brossetti1/go-fil-marketss/piecestore"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	retrievalimpl "github.com/brossetti1/go-fil-marketss/retrievalmarket/impl"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/requestvalidation"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/testnodes"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/migrations/maptypes"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/network"
-	tut "github.com/brossetti1/go-fil-marketss/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/piecestore"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	retrievalimpl "github.com/brossetti1/go-fil-markets/retrievalmarket/impl"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/requestvalidation"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/testnodes"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/migrations/maptypes"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/network"
+	tut "github.com/brossetti1/go-fil-markets/shared_testutil"
 )
 
 func TestDynamicPricing(t *testing.T) {

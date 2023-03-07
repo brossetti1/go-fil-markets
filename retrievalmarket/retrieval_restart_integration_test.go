@@ -16,13 +16,13 @@ import (
 	"github.com/filecoin-project/go-state-types/abi"
 	"github.com/filecoin-project/go-state-types/big"
 
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	testnodes2 "github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/testnodes"
-	"github.com/brossetti1/go-fil-marketss/shared_testutil"
-	tut "github.com/brossetti1/go-fil-marketss/shared_testutil"
-	"github.com/brossetti1/go-fil-marketss/storagemarket/testharness"
-	"github.com/brossetti1/go-fil-marketss/storagemarket/testharness/dependencies"
-	"github.com/brossetti1/go-fil-marketss/storagemarket/testnodes"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	testnodes2 "github.com/brossetti1/go-fil-markets/retrievalmarket/impl/testnodes"
+	"github.com/brossetti1/go-fil-markets/shared_testutil"
+	tut "github.com/brossetti1/go-fil-markets/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/storagemarket/testharness"
+	"github.com/brossetti1/go-fil-markets/storagemarket/testharness/dependencies"
+	"github.com/brossetti1/go-fil-markets/storagemarket/testnodes"
 )
 
 var log = logger.Logger("restart_test")

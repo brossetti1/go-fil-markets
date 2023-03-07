@@ -9,8 +9,8 @@ import (
 
 	"github.com/filecoin-project/go-state-types/abi"
 
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/askstore"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/askstore"
 )
 
 func TestAskStoreImpl(t *testing.T) {

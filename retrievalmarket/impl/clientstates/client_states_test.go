@@ -19,11 +19,11 @@ import (
 	"github.com/filecoin-project/go-statemachine/fsm"
 	fsmtest "github.com/filecoin-project/go-statemachine/fsm/testutil"
 
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	rm "github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/clientstates"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/testnodes"
-	testnet "github.com/brossetti1/go-fil-marketss/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	rm "github.com/brossetti1/go-fil-markets/retrievalmarket"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/clientstates"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/testnodes"
+	testnet "github.com/brossetti1/go-fil-markets/shared_testutil"
 )
 
 type consumeBlockResponse struct {

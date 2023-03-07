@@ -31,14 +31,14 @@ import (
 	"github.com/filecoin-project/go-state-types/big"
 	"github.com/filecoin-project/go-state-types/builtin/v8/paych"
 
-	"github.com/brossetti1/go-fil-marketss/piecestore"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket"
-	retrievalimpl "github.com/brossetti1/go-fil-marketss/retrievalmarket/impl"
-	"github.com/brossetti1/go-fil-marketss/retrievalmarket/impl/testnodes"
-	rmnet "github.com/brossetti1/go-fil-marketss/retrievalmarket/network"
-	rmtesting "github.com/brossetti1/go-fil-marketss/retrievalmarket/testing"
-	tut "github.com/brossetti1/go-fil-marketss/shared_testutil"
-	"github.com/brossetti1/go-fil-marketss/stores"
+	"github.com/brossetti1/go-fil-markets/piecestore"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket"
+	retrievalimpl "github.com/brossetti1/go-fil-markets/retrievalmarket/impl"
+	"github.com/brossetti1/go-fil-markets/retrievalmarket/impl/testnodes"
+	rmnet "github.com/brossetti1/go-fil-markets/retrievalmarket/network"
+	rmtesting "github.com/brossetti1/go-fil-markets/retrievalmarket/testing"
+	tut "github.com/brossetti1/go-fil-markets/shared_testutil"
+	"github.com/brossetti1/go-fil-markets/stores"
 )
 
 func TestClientCanMakeQueryToProvider(t *testing.T) {
@@ -581,7 +581,7 @@ Message:		 %s
 			}
 			// TODO this is terrible, but it's temporary until the test harness refactor
 			// in the resuming retrieval deals branch is done
-			// https://github.com/brossetti1/go-fil-marketss/issues/65
+			// https://github.com/brossetti1/go-fil-markets/issues/65
 			if testCase.decider != nil {
 				assert.True(t, customDeciderRan)
 			}
